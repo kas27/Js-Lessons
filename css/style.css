@@ -1,14 +1,20 @@
 body{
 	width: 1200px;
 	margin: 0 auto;
-	
 }
-.wrapper{
-	height: 700px;
-	iframe{
-		height: 500px;
-	} 
+#block li{
+	width: 250px;
+	padding: 5px 10px;
+	background: tomato;
+	color: white;
+	margin-bottom: 10px;
 }
-.block{
-	column-count: 2;
+#list p.active{
+	color: green;
+}
+#block ul{
+	padding-left: 0;
+}
+#block li:hover{
+	cursor: pointer;
 }

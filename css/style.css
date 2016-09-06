@@ -1,0 +1,14 @@
+body{
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.wrapper{
+	height: 700px;
+	iframe{
+		height: 500px;
+	} 
+}
+.block{
+	column-count: 2;
+}

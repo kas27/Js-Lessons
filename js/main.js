@@ -283,36 +283,135 @@
 // 	while(answer == '1');
 // }
 
-element1.onclick = function() {
-	var first = document.getElementById('list').firstElementChild;
-	first.classList.add('active');
-}
-element2.onclick = function() {
-	var first = document.getElementById('list').lastElementChild;
-	first.classList.add('active');
-}
-var number = 0;
-element3.onclick = function() {
-	var first = document.getElementById('list').children;
-	// var up = false;
-	// console.log(first[first.length - 1]);
 
-	for(var i = 0; i < first.length; i++){
-		first[i].classList.remove("active");
-		// if(first[first.length - 1] == first[i].getAttribute("active")){
-		// 	up = true;
-		// 	first[number].classList.add('active');
-		// }
-	}
 
-	first[number].classList.add('active');
-	number++;
-	console.log(number);
-	
-	if(first[number] == undefined){
-		number = 0;
-	}
+//_______________________________________lessons 3______________________________
+
+// var number = 0,
+// 	number2 = 0,
+// 	first;
+
+// function removeClass(){
+
+// 	first = document.getElementById('list').children;
+
+// 	for(var i = 0; i < first.length; i++){
+// 		first[i].classList.remove("active");
+// 	}
+// }
+
+// element1.onclick = function() {
+
+// 	removeClass();
+
+// 	first = document.getElementById('list').firstElementChild.classList.add('active');
+// }
+
+// element2.onclick = function() {
+// 	removeClass();
+// 	first = document.getElementById('list').lastElementChild.classList.add('active');
 
 	
+// }
+
+// element3.onclick = function() {
+
+// 	removeClass();
+
+// 	first[number].classList.add('active');
+// 	number2 = number;
+// 	number++;
+
+
+	
+	
+// 	console.log(number);
+// 	console.log(number2);
+// 	if(first[number] == undefined){
+// 		number = 0;
+// 	}
+	
+// }
+// element4.onclick = function() {
+
+// 	removeClass();
+
+// 	// .previousElementSibling
+// 	first[number2].classList.add('active');
+// 	number = number2;
+// 	number2--;
+	
+// 	console.log(number2);
+
+
+// 	if(first[number2] == undefined){
+// 		number2 = first.length-1;
+// 	}
+	
+// }
+// var div;
+// element5.onclick = function(){
+// 	div = document.createElement('p');
+// 	div.innerHTML = 'New element';
+// 	list.appendChild(div);
+// }
+// element7.onclick = function(){
+// 	div = document.createElement('p');
+// 	div.innerHTML = 'New element';
+// 	list.insertBefore(div, list.firstElementChild);
+// }
+// element6.onclick = function(){
+// 	var d = document.getElementById('list').lastElementChild;
+// 	list.removeChild(d);
+// }
+
+
+//_______________________________________lessons 4______________________________
+
+
+
+
+// var timeInterval = 1000;
+// var time = 0;
+// var myVar;
+
+
+// function clerTimer(){
+// 	clearInterval(myVar);
+// 	time = 0;
+// 	document.getElementById("d").innerHTML = time + 'сек';
+// }
+
+// function startTimer(){
+// 	myVar = setInterval(function(){
+// 		if(time != 30){
+// 			time ++;
+// 		}
+// 		document.getElementById("d").innerHTML = time + 'сек';
+// 	}, timeInterval);
+    
+// }
+
+// function stopTimer(){
+// 	clearInterval(myVar);
+// }
+
+
+//____________________________
+
+var obj = {
+  className: 'open menu'
 }
+// var test = Object.keys(obj);
+var test = obj.className = test;
+
+console.log(test);
+
+
+
+
+
+
+
+
 
